@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulari enviament</title>
+        <script type="text/javascript">
+            function validar(){
+            var psswd=document.getElementById("psswd").value;
+            var confpsswd=document.getElementById("confpsswd").value;
+            if(psswd==confpsswd){
+            return true;
+            }
+            else{
+            alert("No coincideix");
+            return false;
+            }
+            }
+            </script>
+    </head>
+    <body>
+        <h1 style="text-align: center;">FORMULARI AMB TAULES</h1>
+           <table align="center" style="text-align: center;">
+                <thead>
+                    <th style="text-align: left; color: white;" bgcolor="5c5dff">Enviar missatge 
+                    <img src="img/gb_reload_s.gif" alt="" style="text-align: right;"></th>
+                </thead>
+                <tr>
+                    <td style="text-align: left;" bgcolor="c4c4c4">Nom: <input type="text"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" bgcolor="c4c4c4">E-Mail: <input type="text"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" bgcolor="c4c4c4">Arxiu: <input type="text"> <input type="file"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" bgcolor="c4c4c4">Imatge: <input type="text"><input type="file"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" bgcolor="c4c4c4">Requereix resposta: <input type="radio">Si <input type="radio">No</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" bgcolor="c4c4c4">Missatge: <input type="textarea"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" bgcolor="c4c4c4">Usuari<input type="text" maxlength="8"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" bgcolor="c4c4c4">Contrasenya<input type="password" id="psswd"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" bgcolor="c4c4c4">Repetició contrasenya <form action="" onsubmit="return validar();"></form><input type="password" id="confpasswd"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" bgcolor="c4c4c4">Quins jocs t'interessen?</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" bgcolor="c4c4c4"><input type="checkbox">FIFA</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" bgcolor="c4c4c4"><input type="checkbox">Valorant</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" bgcolor="c4c4c4"><input type="checkbox">League of Legends</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" bgcolor="c4c4c4"><input type="checkbox">Call of Duty</td>
+                </tr>
+                <tr>
+                    <td bgcolor="c4c4c4"><input type="button" value="Enviar"><input type="button" value="Borrar"></td>
+                </tr>
+            </table>
+    </body>
+</html>
